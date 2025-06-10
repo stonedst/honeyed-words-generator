@@ -13,8 +13,9 @@ P.S. `|`代表换行
 
 ## 本地开发
 
+node需要大于`18`
 `cd honeyed-words-generator && yarn install`
 
-`yarn start`
+`yarn dev`
 
 Let's rock it~
