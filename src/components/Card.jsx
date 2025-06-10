@@ -161,19 +161,16 @@ export default function Card({ wordArr = [], visible = false }) {
     if (visible && wordArr.length > 0) {
       if (wordsIdx) {
         currWords = wordArr[wordsIdx];
-        console.log({ currWords });
       }
       const RandomWords = [...wordArr];
       shuffle(RandomWords);
       let wordSeq = currWords === '' ? 1 : RandomWords.findIndex((w) => w === currWords) + 1;
       let newWords = RandomWords[(wordSeq - 1) % RandomWords.length];
-      console.log({ newWords });
 
       setWords(newWords);
       wordCount = 0;
       // 全局变量
       window.CUR_WORDS_IDX = wordArr.findIndex((w) => w === newWords);
-      console.log('from card CUR_WORDS_IDX', window.CUR_WORDS_IDX);
 
       return () => {
         wordSeq++;
@@ -189,7 +186,6 @@ export default function Card({ wordArr = [], visible = false }) {
           .split('|')
           .map((line, lineIdx) => {
             let ws = line.split('');
-            console.log({ ws });
 
             if (lineIdx !== 0) {
               wordCount = wordCount + words.split('|')[lineIdx - 1].length;

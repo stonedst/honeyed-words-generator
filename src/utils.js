@@ -2,7 +2,6 @@
 
 export function shuffle(array) {
   let counter = array.length;
-  console.log('shuffle', array);
 
   // While there are elements in the array
   while (counter > 0) {

@@ -30,7 +30,6 @@ export default function SaveButton({ visible }) {
     if (isWebview) {
       alert('请在浏览器打开！');
     }
-    console.log('download');
     let ele = document.querySelector('#HONEYED_WORDS_CARD');
     await generateImage(ele);
   };
@@ -43,13 +42,10 @@ export default function SaveButton({ visible }) {
         tmp.classList.add('starting');
         tmp.style.transform = 'none';
         tmp.style.boxShadow = 'none';
-        console.log('dommmm', tmp.innerHTML);
       },
       scale: window.devicePixelRatio * (isWebview ? 2 : 1)
     }).then(function (canvas) {
-      console.log(canvas);
       if (isWebview) {
-        console.log('weixin');
         let img = document.createElement('img');
 
         canvas.toBlob((blob) => {
