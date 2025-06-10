@@ -13,9 +13,17 @@ P.S. `|`代表换行
 
 ## 本地开发
 
-node需要大于`18`
+node 需要大于`18`
 `cd honeyed-words-generator && yarn install`
 
 `yarn dev`
 
 Let's rock it~
+
+### ubuntu
+
+node 需要大于`18`,我使用的是`22.16.0`
+
+`npm install`
+
+`npm run dev`
