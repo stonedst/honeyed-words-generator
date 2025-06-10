@@ -1,7 +1,7 @@
 {
   "name": "honeyed-words-generator",
   "version": "2.0.0",
-  "description": "土味情话，在线生成",
+  "description": "小李の土味糖罐",
   "main": "main.jsx",
   "repository": {
     "type": "git",

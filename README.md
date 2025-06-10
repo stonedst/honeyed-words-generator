@@ -3,7 +3,7 @@
   <h1>甜(Tu)言(Wei)蜜(Qing)语(Hua)</h1>
 </div>
 
-土味情话，在线生成：[https://tiny-raindrop-922902.netlify.app/](https://tiny-raindrop-922902.netlify.app/)
+土味情话，在线生成：[https://liu-ruo-han-520.netlify.app/](https://liu-ruo-han-520.netlify.app/)
 
 ## 贡献土味情话
 
@@ -27,3 +27,5 @@ node 需要大于`18`,我使用的是`22.16.0`
 `npm install`
 
 `npm run dev`
+
+注意： 现在可以正常运行了，最好不要再修改 package.json 等依赖文件了
